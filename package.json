@@ -1,0 +1,43 @@
+{
+  "name": "structus-kotlin",
+  "version": "0.1.0",
+  "description": "A pure Kotlin JVM library for implementing Explicit Architecture with DDD, CQS, and EDA patterns",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/melsardes/structus-kotlin.git"
+  },
+  "keywords": [
+    "kotlin",
+    "ddd",
+    "domain-driven-design",
+    "cqrs",
+    "event-driven",
+    "clean-architecture",
+    "explicit-architecture",
+    "library"
+  ],
+  "author": "Mel Sardes <dev.melsardes@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
+  "bugs": {
+    "url": "https://github.com/melsardes/structus-kotlin/issues"
+  },
+  "homepage": "https://github.com/melsardes/structus-kotlin#readme",
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.0",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^10.1.0",
+    "@semantic-release/release-notes-generator": "^12.1.0",
+    "conventional-changelog-conventionalcommits": "^8.0.0",
+    "semantic-release": "^24.2.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "private": true
+}

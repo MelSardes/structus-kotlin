@@ -1,0 +1,90 @@
+version: 2
+
+updates:
+  # Gradle dependencies
+  - package-ecosystem: "gradle"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Africa/Libreville"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "MelSardes"
+    assignees:
+      - "MelSardes"
+    labels:
+      - "dependencies"
+      - "gradle"
+    commit-message:
+      prefix: "chore"
+      prefix-development: "chore"
+      include: "scope"
+    groups:
+      kotlin:
+        patterns:
+          - "org.jetbrains.kotlin*"
+        update-types:
+          - "minor"
+          - "patch"
+      coroutines:
+        patterns:
+          - "org.jetbrains.kotlinx:kotlinx-coroutines*"
+        update-types:
+          - "minor"
+          - "patch"
+      gradle-plugins:
+        patterns:
+          - "*gradle*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Africa/Libreville"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "MelSardes"
+    assignees:
+      - "MelSardes"
+    labels:
+      - "dependencies"
+      - "github-actions"
+    commit-message:
+      prefix: "ci"
+      include: "scope"
+
+  # npm dependencies (for semantic-release)
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Africa/Libreville"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "MelSardes"
+    assignees:
+      - "MelSardes"
+    labels:
+      - "dependencies"
+      - "npm"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+    groups:
+      semantic-release:
+        patterns:
+          - "@semantic-release/*"
+          - "semantic-release"
+        update-types:
+          - "minor"
+          - "patch"

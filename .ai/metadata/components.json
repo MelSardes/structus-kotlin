@@ -1,0 +1,158 @@
+{
+  "library": {
+    "name": "Structus",
+    "fullName": "Structus - Kotlin Architecture Toolkit",
+    "version": "0.1.0",
+    "description": "Pure Kotlin library for Explicit Architecture with DDD, CQS, and EDA",
+    "groupId": "com.melsardes.libraries",
+    "artifactId": "structus-kotlin",
+    "basePackage": "com.melsardes.libraries.structus"
+  },
+  "components": {
+    "domain": {
+      "package": "com.melsardes.libraries.structus.domain",
+      "components": [
+        {
+          "name": "Entity",
+          "type": "abstract class",
+          "purpose": "Base class for domain entities with identity",
+          "usage": "Extend this for entities that have unique identity",
+          "example": "class User(id: UserId, val name: String) : Entity<UserId>(id)"
+        },
+        {
+          "name": "AggregateRoot",
+          "type": "abstract class",
+          "purpose": "Root entity of an aggregate",
+          "usage": "Extend this for aggregate roots that control access to their aggregate",
+          "example": "class Order(id: OrderId, val items: List<OrderItem>) : AggregateRoot<OrderId>(id)"
+        },
+        {
+          "name": "ValueObject",
+          "type": "interface",
+          "purpose": "Marker for immutable value objects",
+          "usage": "Implement this for objects defined by their attributes",
+          "example": "data class Money(val amount: Double, val currency: String) : ValueObject"
+        },
+        {
+          "name": "DomainEvent",
+          "type": "interface",
+          "purpose": "Base interface for domain events",
+          "usage": "Implement this for events that represent domain changes",
+          "example": "data class UserCreatedEvent(...) : DomainEvent"
+        },
+        {
+          "name": "Repository",
+          "type": "interface",
+          "purpose": "Base repository interface",
+          "usage": "Extend this for repository contracts",
+          "example": "interface UserRepository : Repository<User, UserId>"
+        },
+        {
+          "name": "CommandRepository",
+          "type": "interface",
+          "purpose": "Repository for write operations",
+          "usage": "Extend this for command-side repositories",
+          "example": "interface UserCommandRepository : CommandRepository<User, UserId>"
+        },
+        {
+          "name": "QueryRepository",
+          "type": "interface",
+          "purpose": "Repository for read operations",
+          "usage": "Extend this for query-side repositories",
+          "example": "interface UserQueryRepository : QueryRepository<User, UserId>"
+        },
+        {
+          "name": "Result",
+          "type": "sealed class",
+          "purpose": "Type-safe result wrapper for operations",
+          "usage": "Return this instead of throwing exceptions",
+          "example": "fun save(): Result<Unit> = Result.Success(Unit)"
+        },
+        {
+          "name": "DomainError",
+          "type": "sealed class",
+          "purpose": "Base class for domain errors",
+          "usage": "Use specific error types for different failure scenarios",
+          "example": "Result.Failure(DomainError.ValidationError(\"Invalid input\"))"
+        },
+        {
+          "name": "MessageOutboxRepository",
+          "type": "interface",
+          "purpose": "Repository for transactional outbox pattern",
+          "usage": "Implement this for reliable event publishing",
+          "example": "interface MessageOutboxRepository { suspend fun save(message: OutboxMessage): Result<Unit> }"
+        }
+      ]
+    },
+    "application": {
+      "package": "com.melsardes.libraries.structus.application",
+      "subpackages": {
+        "commands": {
+          "package": "com.melsardes.libraries.structus.application.commands",
+          "components": [
+            {
+              "name": "Command",
+              "type": "interface",
+              "purpose": "Marker for command objects",
+              "usage": "Implement this for commands that change state",
+              "example": "data class CreateUserCommand(val name: String) : Command"
+            },
+            {
+              "name": "CommandHandler",
+              "type": "interface",
+              "purpose": "Handler for processing commands",
+              "usage": "Implement this to handle specific commands",
+              "example": "class CreateUserCommandHandler : CommandHandler<CreateUserCommand, UserId>"
+            }
+          ]
+        },
+        "queries": {
+          "package": "com.melsardes.libraries.structus.application.queries",
+          "components": [
+            {
+              "name": "Query",
+              "type": "interface",
+              "purpose": "Marker for query objects",
+              "usage": "Implement this for queries that read data",
+              "example": "data class GetUserByIdQuery(val id: UserId) : Query<UserDto>"
+            },
+            {
+              "name": "QueryHandler",
+              "type": "interface",
+              "purpose": "Handler for processing queries",
+              "usage": "Implement this to handle specific queries",
+              "example": "class GetUserByIdQueryHandler : QueryHandler<GetUserByIdQuery, UserDto>"
+            }
+          ]
+        },
+        "events": {
+          "package": "com.melsardes.libraries.structus.application.events",
+          "components": [
+            {
+              "name": "DomainEventPublisher",
+              "type": "interface",
+              "purpose": "Publisher for domain events",
+              "usage": "Implement this to publish events to external systems",
+              "example": "class KafkaEventPublisher : DomainEventPublisher"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "patterns": [
+    "CQRS (Command Query Responsibility Segregation)",
+    "Repository Pattern",
+    "Aggregate Pattern",
+    "Domain Events",
+    "Result Pattern",
+    "Transactional Outbox Pattern"
+  ],
+  "constraints": [
+    "Framework-agnostic (no Spring, Ktor, etc. in domain/application layers)",
+    "All I/O operations must be suspend functions",
+    "Use Result<T> instead of exceptions for business logic errors",
+    "Immutable domain objects (use copy for changes)",
+    "Repository interfaces in domain layer, implementations in infrastructure"
+  ]
+}
