@@ -43,7 +43,7 @@ dependencies {
     // This ensures the library remains pure and framework-agnostic
     
     // Kotlin Coroutines for async/suspend function support
-    api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0")
+    api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
     
     // NO OTHER DEPENDENCIES ALLOWED
     // No Spring, Ktor, R2DBC, JDBC, Hibernate, or any framework-specific libraries
@@ -51,7 +51,7 @@ dependencies {
     // Test dependencies
     testImplementation("org.jetbrains.kotlin:kotlin-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
-    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.9.0")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.10.2")
     testImplementation("io.mockk:mockk:1.14.6")
 }
 
