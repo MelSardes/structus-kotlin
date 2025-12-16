@@ -1,0 +1,8 @@
+{
+  "label": "Playground",
+  "position": 9,
+  "link": {
+    "type": "generated-index",
+    "description": "Interactive environment to experiment with Structus code."
+  }
+}

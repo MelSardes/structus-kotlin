@@ -367,6 +367,7 @@ class UserController(
 
 ## 📖 Documentation
 
+- **[📚 Official Documentation Website](https://melsardes.github.io/structus-kotlin/)** - Complete guides, tutorials, and API reference
 - **[GUIDE.md](GUIDE.md)**: Comprehensive guide on project structure and conventions
 - **[ASSESSMENT.md](ASSESSMENT.md)**: Implementation checklist and improvement suggestions
 - **API Documentation**: Generated KDoc available in the library

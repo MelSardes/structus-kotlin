@@ -1,0 +1,8 @@
+{
+  "label": "Ressources d'Apprentissage",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Ressources d'apprentissage supplémentaires pour les concepts Structus et les technologies associées."
+  }
+}

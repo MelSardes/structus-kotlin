@@ -10,6 +10,8 @@
  * technology stack (Spring, Ktor, Micronaut, etc.).
  */
 
+import java.util.Properties
+
 plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
     alias(libs.plugins.kotlin.jvm)
@@ -22,6 +24,17 @@ plugins {
     
     // JaCoCo for code coverage
     jacoco
+}
+
+// Load local properties if file exists (for sensitive credentials)
+val localPropertiesFile = rootProject.file("local.properties")
+if (localPropertiesFile.exists()) {
+    val props = Properties().apply {
+        localPropertiesFile.inputStream().use { load(it) }
+    }
+    props.stringPropertyNames().forEach { key ->
+        project.ext.set(key, props.getProperty(key))
+    }
 }
 
 // Project metadata - read from gradle.properties
@@ -148,7 +161,7 @@ publishing {
             pom {
                 name.set("Structus - Kotlin Architecture Toolkit")
                 description.set("A pure Kotlin library for implementing Explicit Architecture with DDD, CQS, and EDA patterns")
-                url.set("https://github.com/melsardes/structus-kotlin")
+                url.set("https://github.com/MelSardes/structus-kotlin")
                 
                 licenses {
                     license {
@@ -159,26 +172,26 @@ publishing {
                 
                 developers {
                     developer {
-                        id.set("melsardes")
+                        id.set("MelSardes")
                         name.set("Mel Sardes")
                         email.set("dev.melsardes@gmail.com")
                     }
                 }
                 
                 scm {
-                    connection.set("scm:git:git://github.com/melsardes/structus-kotlin.git")
-                    developerConnection.set("scm:git:ssh://github.com/melsardes/structus-kotlin.git")
-                    url.set("https://github.com/melsardes/structus-kotlin")
+                    connection.set("scm:git:git://github.com/MelSardes/structus-kotlin.git")
+                    developerConnection.set("scm:git:ssh://github.com/MelSardes/structus-kotlin.git")
+                    url.set("https://github.com/MelSardes/structus-kotlin")
                 }
                 
                 issueManagement {
                     system.set("GitHub")
-                    url.set("https://github.com/melsardes/structus-kotlin/issues")
+                    url.set("https://github.com/MelSardes/structus-kotlin/issues")
                 }
                 
                 ciManagement {
                     system.set("GitHub Actions")
-                    url.set("https://github.com/melsardes/structus-kotlin/actions")
+                    url.set("https://github.com/MelSardes/structus-kotlin/actions")
                 }
             }
         }
@@ -187,10 +200,14 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/melsardes/structus-kotlin")
+            url = uri("https://maven.pkg.github.com/MelSardes/structus-kotlin")
             credentials {
-                username = System.getenv("GITHUB_ACTOR") ?: project.findProperty("gpr.user") as String?
-                password = System.getenv("GITHUB_TOKEN") ?: project.findProperty("gpr.token") as String?
+                username = System.getenv("GITHUB_ACTOR") 
+                    ?: project.findProperty("gpr.user") as String?
+                    ?: project.ext.properties["gpr.user"] as String?
+                password = System.getenv("GITHUB_TOKEN") 
+                    ?: project.findProperty("gpr.token") as String?
+                    ?: project.ext.properties["gpr.token"] as String?
             }
         }
     }

@@ -1,0 +1,8 @@
+{
+  "label": "Cookbook & Recipes",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Practical recipes and solutions for common scenarios with Structus."
+  }
+}

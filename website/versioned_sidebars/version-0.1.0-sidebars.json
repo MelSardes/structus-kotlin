@@ -1,0 +1,63 @@
+{
+  "tutorialSidebar": [
+    {
+      "type": "doc",
+      "id": "intro",
+      "label": "Introduction"
+    },
+    {
+      "type": "doc",
+      "id": "about",
+      "label": "About"
+    },
+    {
+      "type": "category",
+      "label": "Getting Started",
+      "items": [
+        "getting-started/installation",
+        "getting-started/quick-start",
+        "getting-started/core-concepts"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Architecture",
+      "items": [
+        "architecture/overview"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Advanced Topics",
+      "items": [
+        "advanced/cqrs-implementation",
+        "advanced/transactional-outbox"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Best Practices",
+      "items": [
+        "best-practices/guidelines"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Reference",
+      "items": [
+        "reference/api-overview"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "AI Agent Support",
+      "items": [
+        "ai/overview",
+        "ai/library-overview",
+        "ai/usage-patterns",
+        "ai/code-templates",
+        "ai/prompts"
+      ]
+    }
+  ]
+}

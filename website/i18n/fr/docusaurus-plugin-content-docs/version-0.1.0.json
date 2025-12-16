@@ -1,0 +1,46 @@
+{
+  "version.label": {
+    "message": "Suivant",
+    "description": "The label for version 0.1.0"
+  },
+  "sidebar.tutorialSidebar.category.Getting Started": {
+    "message": "Premiers Pas",
+    "description": "The label for category 'Getting Started' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Architecture": {
+    "message": "Architecture",
+    "description": "The label for category 'Architecture' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Advanced Topics": {
+    "message": "Sujets Avancés",
+    "description": "The label for category 'Advanced Topics' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Best Practices": {
+    "message": "Bonnes Pratiques",
+    "description": "The label for category 'Best Practices' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Reference": {
+    "message": "Référence",
+    "description": "The label for category 'Reference' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.AI Agent Support": {
+    "message": "Support Agent IA",
+    "description": "The label for category 'AI Agent Support' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Learning Resources": {
+    "message": "Ressources d'Apprentissage",
+    "description": "The label for category Learning Resources in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Introduction": {
+    "message": "Introduction",
+    "description": "The label for category Introduction in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.doc.Introduction": {
+    "message": "Introduction",
+    "description": "The label for the doc item 'Introduction' in sidebar 'tutorialSidebar', linking to the doc intro"
+  },
+  "sidebar.tutorialSidebar.doc.About": {
+    "message": "About",
+    "description": "The label for the doc item 'About' in sidebar 'tutorialSidebar', linking to the doc about"
+  }
+}

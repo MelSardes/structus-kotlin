@@ -1,0 +1,8 @@
+{
+  "label": "Integration Guides",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Detailed guides for integrating Structus with popular frameworks and tools."
+  }
+}
