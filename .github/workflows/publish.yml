@@ -84,7 +84,7 @@ jobs:
           echo '```kotlin' >> $GITHUB_STEP_SUMMARY
           echo 'repositories {' >> $GITHUB_STEP_SUMMARY
           echo '    maven {' >> $GITHUB_STEP_SUMMARY
-          echo '        url = uri("https://maven.pkg.github.com/melsardes/structus-kotlin")' >> $GITHUB_STEP_SUMMARY
+          echo '        url = uri("https://maven.pkg.github.com/structus-io/structus-kotlin")' >> $GITHUB_STEP_SUMMARY
           echo '        credentials {' >> $GITHUB_STEP_SUMMARY
           echo '            username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")' >> $GITHUB_STEP_SUMMARY
           echo '            password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")' >> $GITHUB_STEP_SUMMARY

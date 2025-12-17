@@ -169,6 +169,8 @@ secrets.yaml
 ### Documentation Build ###
 docs/_build/
 site/
+website/.docusaurus/
+website/build/
 
 ### Misc ###
 .cache/

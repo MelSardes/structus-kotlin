@@ -490,7 +490,7 @@ suspend fun main() {
 ## Support
 
 If you encounter any issues or have questions:
-- Open an issue on [GitHub](https://github.com/melsardes/structus-kotlin/issues)
+- Open an issue on [GitHub](https://github.com/structus-io/structus-kotlin/issues)
 - Check existing documentation in the repository
 - Review the test suite for usage examples
 

@@ -5,7 +5,7 @@
 
   [![Kotlin](https://img.shields.io/badge/Kotlin-2.2.0+-blue.svg)](https://kotlinlang.org)
   [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-  [![Version](https://img.shields.io/badge/Version-0.1.0-orange.svg)](https://github.com/melsardes/structus-kotlin)
+  [![Version](https://img.shields.io/badge/Version-0.1.0-orange.svg)](https://github.com/structus-io/structus-kotlin)
   [![AI Agent Friendly](https://img.shields.io/badge/AI%20Agent-Friendly-purple.svg)](.ai/README.md)
 
   ![Structus Banner](./structus-banner.png)
@@ -35,7 +35,7 @@ Since the library is not yet published to a public repository, you'll need to bu
 #### 1. Clone and Build
 
 ```bash
-git clone https://github.com/melsardes/structus-kotlin.git
+git clone https://github.com/structus-io/structus-kotlin.git
 cd structus-kotlin
 ./gradlew build publishToMavenLocal
 ```
@@ -367,7 +367,7 @@ class UserController(
 
 ## 📖 Documentation
 
-- **[📚 Official Documentation Website](https://melsardes.github.io/structus-kotlin/)** - Complete guides, tutorials, and API reference
+- **[📚 Official Documentation Website](https://structus-io.github.io/structus-kotlin/)** - Complete guides, tutorials, and API reference
 - **[GUIDE.md](GUIDE.md)**: Comprehensive guide on project structure and conventions
 - **[ASSESSMENT.md](ASSESSMENT.md)**: Implementation checklist and improvement suggestions
 - **API Documentation**: Generated KDoc available in the library
@@ -559,8 +559,8 @@ This library is inspired by:
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/melsardes/structus-kotlin/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/melsardes/structus-kotlin/discussions)
+- **Issues**: [GitHub Issues](https://github.com/structus-io/structus-kotlin/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/structus-io/structus-kotlin/discussions)
 - **Documentation**: [Getting Started Guide](GETTING_STARTED.md)
 
 ---

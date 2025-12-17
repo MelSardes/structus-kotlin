@@ -19,7 +19,7 @@ The library is currently distributed via manual build and local Maven installati
 Users should build and install the library locally:
 
 ```bash
-git clone https://github.com/melsardes/structus-kotlin.git
+git clone https://github.com/structus-io/structus-kotlin.git
 cd structus-kotlin
 ./gradlew build publishToMavenLocal
 ```

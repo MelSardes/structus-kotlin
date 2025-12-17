@@ -101,8 +101,8 @@ Found an error or want to improve the documentation?
 
 ## 📞 Getting Help
 
-- **Questions**: [GitHub Discussions](https://github.com/melsardes/structus-kotlin/discussions)
-- **Bugs**: [GitHub Issues](https://github.com/melsardes/structus-kotlin/issues)
+- **Questions**: [GitHub Discussions](https://github.com/structus-io/structus-kotlin/discussions)
+- **Bugs**: [GitHub Issues](https://github.com/structus-io/structus-kotlin/issues)
 
 ## 📄 License
 

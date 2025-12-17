@@ -2,7 +2,7 @@
 
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.2.21-blue.svg)](https://kotlinlang.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](../LICENSE)
-[![Version](https://img.shields.io/badge/Version-0.1.0-orange.svg)](https://github.com/melsardes/structus-kotlin)
+[![Version](https://img.shields.io/badge/Version-0.1.0-orange.svg)](https://github.com/structus-io/structus-kotlin)
 
 Welcome to the **Structus** wiki! This comprehensive documentation will guide you through using this pure Kotlin library for implementing Domain-Driven Design (DDD), Command/Query Separation (CQS), and Event-Driven Architecture (EDA).
 
@@ -138,9 +138,9 @@ class RegisterUserCommandHandler(
 
 ## 🤝 Community & Support
 
-- **GitHub Repository**: [melsardes/structus-kotlin](https://github.com/melsardes/structus-kotlin)
-- **Issues**: [Report bugs or request features](https://github.com/melsardes/structus-kotlin/issues)
-- **Discussions**: [Ask questions and share ideas](https://github.com/melsardes/structus-kotlin/discussions)
+- **GitHub Repository**: [melsardes/structus-kotlin](https://github.com/structus-io/structus-kotlin)
+- **Issues**: [Report bugs or request features](https://github.com/structus-io/structus-kotlin/issues)
+- **Discussions**: [Ask questions and share ideas](https://github.com/structus-io/structus-kotlin/discussions)
 
 ## 📄 License
 

@@ -78,7 +78,7 @@
     [
       "@semantic-release/github",
       {
-        "successComment": "🎉 This ${issue.pull_request ? 'PR is included' : 'issue has been resolved'} in version ${nextRelease.version} 🎉\n\nThe release is available on [GitHub Packages](https://github.com/melsardes/structus-kotlin/packages/).\n\n### Installation\n\n```kotlin\ndependencies {\n    implementation(\"com.melsardes.libraries:structus-kotlin:${nextRelease.version}\")\n}\n```",
+        "successComment": "🎉 This ${issue.pull_request ? 'PR is included' : 'issue has been resolved'} in version ${nextRelease.version} 🎉\n\nThe release is available on [GitHub Packages](https://github.com/structus-io/structus-kotlin/packages/).\n\n### Installation\n\n```kotlin\ndependencies {\n    implementation(\"com.melsardes.libraries:structus-kotlin:${nextRelease.version}\")\n}\n```",
         "failComment": false,
         "releasedLabels": ["released"]
       }

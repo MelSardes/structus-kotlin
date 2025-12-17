@@ -19,7 +19,7 @@ To use the library, you need to build it from source and publish it to your loca
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/melsardes/structus-kotlin.git
+git clone https://github.com/structus-io/structus-kotlin.git
 cd structus-kotlin
 ```
 
@@ -166,5 +166,5 @@ kotlin {
 If you encounter issues:
 
 - Check the [FAQ](FAQ.md)
-- Search [GitHub Issues](https://github.com/melsardes/structus-kotlin/issues)
-- Ask in [GitHub Discussions](https://github.com/melsardes/structus-kotlin/discussions)
+- Search [GitHub Issues](https://github.com/structus-io/structus-kotlin/issues)
+- Ask in [GitHub Discussions](https://github.com/structus-io/structus-kotlin/discussions)

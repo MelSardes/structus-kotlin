@@ -4,7 +4,7 @@
   "description": "A pure Kotlin JVM library for implementing Explicit Architecture with DDD, CQS, and EDA patterns",
   "repository": {
     "type": "git",
-    "url": "https://github.com/melsardes/structus-kotlin.git"
+    "url": "https://github.com/structus-io/structus-kotlin.git"
   },
   "keywords": [
     "kotlin",
@@ -22,9 +22,9 @@
     "semantic-release": "semantic-release"
   },
   "bugs": {
-    "url": "https://github.com/melsardes/structus-kotlin/issues"
+    "url": "https://github.com/structus-io/structus-kotlin/issues"
   },
-  "homepage": "https://github.com/melsardes/structus-kotlin#readme",
+  "homepage": "https://github.com/structus-io/structus-kotlin#readme",
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.0",

@@ -347,7 +347,7 @@ See [Contributing Guide](Contributing-Guide.md) for details.
 
 Have an idea? We'd love to hear it!
 
-1. Check existing [GitHub Issues](https://github.com/melsardes/structus-kotlin/issues)
+1. Check existing [GitHub Issues](https://github.com/structus-io/structus-kotlin/issues)
 2. If not found, open a new issue with:
    - Clear description
    - Use case

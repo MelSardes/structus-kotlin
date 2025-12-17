@@ -447,7 +447,7 @@ See [Contributing Guide](Contributing-Guide.md). We welcome:
 
 ### Where do I report bugs?
 
-Open an issue on [GitHub Issues](https://github.com/melsardes/structus-kotlin/issues).
+Open an issue on [GitHub Issues](https://github.com/structus-io/structus-kotlin/issues).
 
 ---
 
